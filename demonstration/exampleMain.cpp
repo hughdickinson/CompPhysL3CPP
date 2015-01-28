@@ -8,7 +8,13 @@ int main(int argc, char * argv[]){
   // What were those arguments?
   std::cout << "argv is an array of strings containing: \n";
   for(int argIndex = 0; argIndex < argc; ++argIndex){
-    std::cout << argIndex << ": " << argv[argIndex] << '\n';
+    std::cout << argIndex << ": " << argv[argIndex];
+    if(argIndex > 0){
+      std::cout << " Main\n";
+    }
+    else{
+      std::cout << "\n";
+    }
   }
   /* NOTE: You don't always have to use std::endl. In fact it's more efficient
    * not to because std::endl also FLUSHES THE OUTPUT STREAM, which is an

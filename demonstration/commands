@@ -19,5 +19,7 @@ ls -l exampleExecutable
 ./exampleExecutable 
 
 # Finally, Let's add a few command line arguments
+# NOTE: Arguments with spaces can be wrapped in 
+#       quotation marks
 
-./exampleExecutable Spanish Old "In the "
+./exampleExecutable Spanish Old "In the"
