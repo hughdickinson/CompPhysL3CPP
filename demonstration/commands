@@ -1,0 +1,23 @@
+# The following command is (almost) the simplest possible
+# invocation of the clang++ utility. It will automatically
+# perform all the stages of translation and compilation that
+# are required to convert the C++ code within exampleMain.cpp
+# into a binary executable called exampleExecutable
+
+clang++ -o exampleExecutable exampleMain.cpp
+
+# We should now verify that exampleExecutable has indeed been
+# created with the correct permissions.
+
+ls -l exampleExecutable
+
+# Now we can try running the executable that we have created.
+# NOTE: For the moment we must explicity specify the path to 
+#       exampleExecutable - either as an absolute path or
+#       the "." token to specify the current directory.
+
+./exampleExecutable 
+
+# Finally, Let's add a few command line arguments
+
+./exampleExecutable Spanish Old "In the "
